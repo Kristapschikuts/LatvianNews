@@ -3,27 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		FAB5920125D7EA500001B1F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5920025D7EA500001B1F9 /* AppDelegate.swift */; };
 		FAB5920325D7EA500001B1F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5920225D7EA500001B1F9 /* SceneDelegate.swift */; };
-		FAB5920525D7EA500001B1F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5920425D7EA500001B1F9 /* ViewController.swift */; };
+		FAB5920525D7EA500001B1F9 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5920425D7EA500001B1F9 /* NewsFeedViewController.swift */; };
 		FAB5920825D7EA500001B1F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB5920625D7EA500001B1F9 /* Main.storyboard */; };
 		FAB5920A25D7EA520001B1F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB5920925D7EA520001B1F9 /* Assets.xcassets */; };
 		FAB5920D25D7EA520001B1F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB5920B25D7EA520001B1F9 /* LaunchScreen.storyboard */; };
+		FAB5921C25D7ED370001B1F9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5921B25D7ED370001B1F9 /* DetailViewController.swift */; };
+		FAB5921F25D7ED420001B1F9 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5921E25D7ED420001B1F9 /* WebViewController.swift */; };
+		FAB5922325D7EE1B0001B1F9 /* Gloss in Frameworks */ = {isa = PBXBuildFile; productRef = FAB5922225D7EE1B0001B1F9 /* Gloss */; };
+		FAB5922725D7EF1F0001B1F9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5922625D7EF1F0001B1F9 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAB591FD25D7EA500001B1F9 /* LatvianNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LatvianNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB5920025D7EA500001B1F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB5920225D7EA500001B1F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAB5920425D7EA500001B1F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAB5920425D7EA500001B1F9 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
 		FAB5920725D7EA500001B1F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB5920925D7EA520001B1F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB5920C25D7EA520001B1F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB5920E25D7EA520001B1F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB5921B25D7ED370001B1F9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FAB5921E25D7ED420001B1F9 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		FAB5922625D7EF1F0001B1F9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB5922325D7EE1B0001B1F9 /* Gloss in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,50 @@
 		FAB591FF25D7EA500001B1F9 /* LatvianNews */ = {
 			isa = PBXGroup;
 			children = (
-				FAB5920025D7EA500001B1F9 /* AppDelegate.swift */,
-				FAB5920225D7EA500001B1F9 /* SceneDelegate.swift */,
-				FAB5920425D7EA500001B1F9 /* ViewController.swift */,
-				FAB5920625D7EA500001B1F9 /* Main.storyboard */,
+				FAB5922525D7EF0D0001B1F9 /* Model */,
+				FAB5921525D7EA5E0001B1F9 /* AppDelegate */,
+				FAB5921825D7EA700001B1F9 /* Controller */,
+				FAB5921725D7EA680001B1F9 /* view */,
 				FAB5920925D7EA520001B1F9 /* Assets.xcassets */,
-				FAB5920B25D7EA520001B1F9 /* LaunchScreen.storyboard */,
 				FAB5920E25D7EA520001B1F9 /* Info.plist */,
 			);
 			path = LatvianNews;
+			sourceTree = "<group>";
+		};
+		FAB5921525D7EA5E0001B1F9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5920025D7EA500001B1F9 /* AppDelegate.swift */,
+				FAB5920225D7EA500001B1F9 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FAB5921725D7EA680001B1F9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5920625D7EA500001B1F9 /* Main.storyboard */,
+				FAB5920B25D7EA520001B1F9 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FAB5921825D7EA700001B1F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5920425D7EA500001B1F9 /* NewsFeedViewController.swift */,
+				FAB5921E25D7ED420001B1F9 /* WebViewController.swift */,
+				FAB5921B25D7ED370001B1F9 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAB5922525D7EF0D0001B1F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAB5922625D7EF1F0001B1F9 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +126,9 @@
 			dependencies = (
 			);
 			name = LatvianNews;
+			packageProductDependencies = (
+				FAB5922225D7EE1B0001B1F9 /* Gloss */,
+			);
 			productName = LatvianNews;
 			productReference = FAB591FD25D7EA500001B1F9 /* LatvianNews.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +156,9 @@
 				Base,
 			);
 			mainGroup = FAB591F425D7EA500001B1F9;
+			packageReferences = (
+				FAB5922125D7EE1B0001B1F9 /* XCRemoteSwiftPackageReference "Gloss" */,
+			);
 			productRefGroup = FAB591FE25D7EA500001B1F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB5920525D7EA500001B1F9 /* ViewController.swift in Sources */,
+				FAB5920525D7EA500001B1F9 /* NewsFeedViewController.swift in Sources */,
 				FAB5920125D7EA500001B1F9 /* AppDelegate.swift in Sources */,
 				FAB5920325D7EA500001B1F9 /* SceneDelegate.swift in Sources */,
+				FAB5921F25D7ED420001B1F9 /* WebViewController.swift in Sources */,
+				FAB5922725D7EF1F0001B1F9 /* Item.swift in Sources */,
+				FAB5921C25D7ED370001B1F9 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +391,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAB5922125D7EE1B0001B1F9 /* XCRemoteSwiftPackageReference "Gloss" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hkellaway/Gloss.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAB5922225D7EE1B0001B1F9 /* Gloss */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAB5922125D7EE1B0001B1F9 /* XCRemoteSwiftPackageReference "Gloss" */;
+			productName = Gloss;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAB591F525D7EA500001B1F9 /* Project object */;
 }
